@@ -6,6 +6,7 @@ const path = require("path");
 const app=express();
 app.use(express.json());
 app.use(cors());
+app.use(express.static(path.join(__dirname)));
 
 mongo.connect("mongodb+srv://manish_calender:mani%40832%23@mycalender.jualbno.mongodb.net/?retryWrites=true&w=majority&appName=mycalender",{})
 .then(()=>{console.log("Connected Sucessfully");})
