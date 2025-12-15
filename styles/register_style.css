@@ -1,0 +1,46 @@
+*{
+    margin: 0.09%;
+    padding: 0.05%;
+}
+header{
+    background-color:azure;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    /* position: fixed; */
+}
+.optins{
+    display: flex;
+    margin-left: 100vh;
+}
+.optins a{
+    background-color: antiquewhite;
+    padding: 10%;
+    border-radius: 13%;
+    margin-left: 2vh;
+}
+footer{
+    background-color:bisque;
+    height: 7vh;
+    width: 100%;
+    /* position: fixed; */
+}
+#main{
+    background-color:cornsilk;
+    gap: 15vh;
+    height: 78vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register_form{
+    width: 60vh;
+    height: auto;
+    background-color:white;
+}
+.row{
+    margin: 5%;
+}

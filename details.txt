@@ -1,0 +1,5 @@
+username: manish_calender
+password : mani@832#
+mongodb+srv://manish_calender:mani@832#@mycalender.jualbno.mongodb.net/?retryWrites=true&w=majority&appName=mycalender
+to use :mongodb+srv://manish_calender:mani%40832%23@mycalender.jualbno.mongodb.net/?retryWrites=true&w=majority&appName=mycalender
+

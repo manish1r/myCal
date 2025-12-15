@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>Daily Reminder</title>
+    <link rel="stylesheet" href="styles/dailyreminder.css">
+</head>
+<body>
+    <header>
+        <h1>My Calender</h1>
+        <div class="opt">
+            <div class="optins">
+                <a href="user_home.html" id="opt_text">Home</a>
+                <a href="task.html" id="opt_text">Add Task</a>
+                <a href="dailyreminder.html" id="opt_text">Daily Reminder</a>
+                <a href="calender.html" id="opt_text">Calender</a>
+                <a href="logout.html" id="opt_text">logout</a>
+            </div>
+        </div>
+    </header>
+    <div id="main">
+        <div id="main_1">
+            <div id="dailyreminder"></div>
+            <div id="dayData"></div>
+        </div>
+        <div id="calender">
+            <div class="calendar-header" id="monthYear">
+                <div id="monthandyear"></div>
+                <button id="gotoButton">Go-To-Date</button>
+                <input type="date" id="inputdate" style="display: none;">
+            </div>
+        <div class="calendar-days">
+            <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+        </div>
+        <div class="calendar-dates" id="calendarDates">
+            <!-- Dates will be injected by JavaScript -->
+        </div>
+        </div>
+    </div>
+    <footer>
+        <p>Contact us <br>manish6820058@gmail.com</p>
+    </footer>
+    <script src="JS/dailyreminder.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+*{
+    margin: 0.09%;
+    margin-right: 0.6%;
+    padding: 0.05%;
+}
+body{
+    height:auto;
+    width: 100%;
+}
+header{
+    background-color:azure;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 0.2%;
+}
+header h1{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 250px;
+    height: 60px;
+    margin-left: 20px; background-color: rgb(85, 34, 150);
+    color: azure;
+    border-radius:9%;
+}
+.opt{
+    display: flex;
+    align-items: center;
+}
+.optins{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1vw;
+}
+#opt_text{
+    width: auto;
+    background-color: antiquewhite;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-left: 2vh;
+    font-size: 18px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+#profile{
+    height: 50px;
+    width: 50px; 
+    border-radius: 50%;
+    background-color: azure;
+}
+footer{
+    background-color:bisque;
+    height: 7vh;
+    width: 100%;
+    /* position: fixed; */
+}
+#main{
+    background-color:cornsilk;
+    gap: 15vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+}
+#calender{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid rgb(14, 12, 12);
+    border-radius: 8px;
+    background-color:rgb(163, 183, 202);
+}
+.calendar-header {
+    text-align: center;
+    background-color:slateblue;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.calendar-days, .calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-days div,.calendar-dates div {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.calendar-days {
+    background-color:wheat;
+    font-weight: bold;
+}
+
+.calendar-dates div {
+    height: 50px;
+    line-height: 50px;
+}
+
+.today {
+    background-color: #ffdf91;
+    border: 2px solid orange;
+    font-weight: bold;
+}
+#dailyreminder{
+    width: auto;
+    height: 78vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    gap: 2vw;
+}
+#main_1{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    display: grid;  
+}
+#gotoButton{
+    margin-left: 40px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

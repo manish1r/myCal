@@ -1,0 +1,93 @@
+*{
+    margin: 0.09%;
+    margin-right: 0.6%;
+    padding: 0.05%;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+header{
+    background-color:azure;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 0.2%;
+}
+header h1{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 250px;
+    height: 60px;
+    margin-left: 20px; background-color: rgb(85, 34, 150);
+    color: azure;
+    border-radius:9%;
+}
+.opt{
+    display: flex;
+    align-items: center;
+}
+.optins{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1vw;
+}
+#opt_text{
+    width: auto;
+    background-color: antiquewhite;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-left: 2vh;
+    font-size: 18px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+#profile{
+    height: 50px;
+    width: 50px; 
+    border-radius: 50%;
+    background-color: azure;
+}
+footer{
+    background-color:bisque;
+    height: 7vh;
+    width: 100%;
+    /* position: fixed; */
+}
+#main{
+    background-color:cornsilk;
+    gap: 15vh;
+    height: 78vh;
+    width: 100%;
+    display: flex;
+}
+#image{
+    width: 50%;
+    height: 78vh;
+    display: flex;
+    justify-content: center;
+}
+.operations{
+    width: 50%;
+    height: 78vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    gap: 2vw;
+}
+.calender,.task,.dailyreminder{
+    font-size: 22px;
+    background-color:rgb(55, 141, 144);
+    border-radius: 2vh;
+    height: 10vh;
+    width:55vh;
+    color: azure;
+}

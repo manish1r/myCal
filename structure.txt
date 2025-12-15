@@ -1,0 +1,28 @@
+myCal
+|--JS
+|  |-calender.js
+|  |-dailyreminder.js
+|  |-login_script.js
+|  |-register_script.js
+|  |-task.js
+|  |-user_home.js
+|--Styles
+|  |-calender.css
+|  |-dailyreminder.css
+|  |-login_style.css
+|  |-register_style.css
+|  |-styles.css
+|  |-task.js
+|  |-user_home.js
+|--cal.png
+|--calender.html
+|--dailyreminder.html
+|--Home.html
+|--login.html
+|--logout.html
+|--package_lock.json
+|--package.json
+|--register.html
+|--server.js
+|--task.html
+|--user_home.html
