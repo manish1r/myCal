@@ -1,6 +1,7 @@
 const express=require("express");
 const mongo=require("mongoose");
 const cors=require("cors");
+const path = require("path");
 
 const app=express();
 app.use(express.json());
@@ -33,6 +34,10 @@ const Reminder=mongo.model("Reminder",new mongo.Schema({
     duration:String,
     date:Date
 }));
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "Home.html"));
+});
 
 app.get("/users",async(req,res)=>{
     try{
