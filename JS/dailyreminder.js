@@ -41,7 +41,7 @@ async function display(d){
             upcomingReminders=[];
             console.log("Date:",i," month:",month," year: ",year);
             const userId=localStorage.getItem("userId");
-            const response=await fetch(`http://localhost:3030/dailyreminder/upcoming?userId=${userId}`);
+            const response=await fetch(`https://mycal-jgvb.onrender.com/dailyreminder/upcoming?userId=${userId}`);
             const result=await response.json();
             console.log("result:",result);
             for(const res of result.reminders){
@@ -133,7 +133,7 @@ addButton.addEventListener("click",async()=>{
     }
     const userId=localStorage.getItem("userId");
     try{
-        const response=await fetch("http://localhost:3030/dailyreminder",{
+        const response=await fetch("https://mycal-jgvb.onrender.com/dailyreminder",{
             method:"POST",
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify({userId,discription,time,duration,date}),
