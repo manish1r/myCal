@@ -25,7 +25,7 @@ button.addEventListener("click",async()=>{
     let users=[];
     let emails=[];
     try{
-        const response=await fetch("http://localhost:3030/users");
+        const response=await fetch("https://mycal-jgvb.onrender.com/users");
         const data=await response.json();
         users=data.map(user=>user.username);
         emails=data.map(user=>user.email);
@@ -51,7 +51,7 @@ button.addEventListener("click",async()=>{
     }
     if(!found){
         try {
-            const res = await fetch("http://localhost:3030/register", {
+            const res = await fetch("https://mycal-jgvb.onrender.com/register", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({username:user,password,email,mobileNumber}),
