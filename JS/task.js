@@ -39,7 +39,7 @@ function display(d){
             upcomingTasks=[];
             console.log("Date:",i," month:",month," year: ",year);
             const userId=localStorage.getItem("userId");
-            const response=await fetch(`http://localhost:3030/task/upcoming?userId=${userId}`);
+            const response=await fetch(`https://mycal-jgvb.onrender.com/task/upcoming?userId=${userId}`);
             const result=await response.json();
             for(const res of result.tasks){
                 const resDate=(res.date[8])+(res.date[9]);
@@ -106,7 +106,7 @@ addButton.addEventListener("click",async()=>{
     }
     const userId=localStorage.getItem("userId");
     try{
-        const response=await fetch("http://localhost:3030/task",{
+        const response=await fetch("https://mycal-jgvb.onrender.com/task",{
             method:"POST",
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify({userId,date,discription,time}),
