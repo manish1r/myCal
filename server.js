@@ -2,13 +2,15 @@ const express=require("express");
 const mongo=require("mongoose");
 const cors=require("cors");
 const path = require("path");
+require("dotenv").config();
 
+const PORT= process.env.PORT || 3030;
 const app=express();
 app.use(express.json());
 app.use(cors());
 app.use(express.static(path.join(__dirname)));
 
-mongo.connect("mongodb+srv://manish_calender:mani%40832%23@mycalender.jualbno.mongodb.net/?retryWrites=true&w=majority&appName=mycalender",{})
+mongo.connect(process.env.MONGO_URI)
 .then(()=>{console.log("Connected Sucessfully");})
 .catch((err)=>{
     console.log("Unable to connect : ",err);
@@ -143,4 +145,4 @@ app.get("/dailyreminder/upcoming",async(req,res)=>{
     }
 });
 
-app.listen(3030,()=>{console.log("server is running on http://localhost:3030");});
+app.listen(PORT,()=>{console.log("server is running on http://localhost:3030");});
